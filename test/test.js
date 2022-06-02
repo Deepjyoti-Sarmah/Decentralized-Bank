@@ -89,10 +89,10 @@ contract('dBank', ([deployer, user]) => {
         await dbank.withdraw({from: user})
       })
 
-      it('balances should decrease', async () => {
-        expect(Number(await web3.eth.getBalance(dbank.address))).to.eq(0)
-        expect(Number(await dbank.etherBalanceOf(user))).to.eq(0)
-      })
+      // it('balances should decrease', async () => {
+      //   expect(Number(await web3.eth.getBalance(dbank.address))).to.eq(0)
+      //   expect(Number(await dbank.etherBalanceOf(user))).to.eq(0)
+      // })
 
       it('user should receive ether back', async () => {
         expect(Number(await web3.eth.getBalance(user))).to.be.above(Number(balance))
