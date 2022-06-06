@@ -82,31 +82,31 @@ contract dBank {
     emit Withdraw(msg.sender, userBalance, depositTime, interest);
   }
 
-  function borrow() payable public {
-    //check if collateral is >= than 0.01 ETH
-    //check if user doesn't have active loan
+  // function borrow() payable public {
+  //   //check if collateral is >= than 0.01 ETH
+  //   //check if user doesn't have active loan
 
-    //add msg.value to ether collateral
+  //   //add msg.value to ether collateral
 
-    //calc tokens amount to mint, 50% of msg.value
+  //   //calc tokens amount to mint, 50% of msg.value
 
-    //mint&send tokens to user
+  //   //mint&send tokens to user
 
-    //activate borrower's loan status
+  //   //activate borrower's loan status
 
-    //emit event
-  }
+  //   //emit event
+  // }
 
-  function payOff() public {
-    //check if loan is active
-    //transfer tokens from user back to the contract
+  // function payOff() public {
+  //   //check if loan is active
+  //   //transfer tokens from user back to the contract
 
-    //calc fee
+  //   //calc fee
 
-    //send user's collateral minus fee
+  //   //send user's collateral minus fee
 
-    //reset borrower's data
+  //   //reset borrower's data
 
-    //emit event
-  }
+  //   //emit event
+  // }
 }
